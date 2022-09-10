@@ -1,10 +1,15 @@
+.banner
+{
+    background-image: url('../../../assets/img/bannerimg.jpg');
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
 .content
 {
     top: 30%;
     left: 20%;
-    background-color: lightgrey;
     position: absolute;
-    font-weight: bold;
 }
 .content h1 
 {

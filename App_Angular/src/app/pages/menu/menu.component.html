@@ -2,15 +2,15 @@
 
     <div class="row">
 
-        <div class="col-lg-4" *ngFor="let fd of foodData">
+        <div class="col-lg-4" *ngFor="let temp of foodData">
 
             <div class="foodbox mt-3 mb-3">
-                <img src="{{fd.foodImg}}">
-                <h1>{{fd.foodName}}</h1>
-                <p>{{fd.foodDetails}}</p>
-                <p>{{fd.foodPrice | currency:'INR'}}</p>
+                <img src="{{temp.foodImg}}" alt="Food">
+                <h1>{{temp.foodName}}</h1>
+                <p>{{temp.foodDetails}}</p>
+                <p>{{temp.foodPrice | currency:'R'}}</p>
                 <br/>
-                <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now &nbsp;<i class="bi bi-bag"></i></a>
+                <a class="Payment" [routerLink]="['/menu',temp.id]">Make Payment &nbsp;<em class="bi bi-bag"></em></a>
             </div>
 
         </div>

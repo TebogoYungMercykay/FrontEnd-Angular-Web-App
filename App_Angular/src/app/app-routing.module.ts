@@ -5,13 +5,19 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './pages/menu/menu.component';
 import { MenupageComponent } from './pages/menupage/menupage.component';
+import { LoginComponent } from './pages/login/login.component';
+import { SignupComponent } from './pages/signup/signup.component';
+import { OrderComponent } from './pages/order/order.component';
 
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'menu',component:MenuComponent},
   {path:'menu/:id',component:MenupageComponent},
   {path:'about',component:AboutComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'login',component:LoginComponent},
+  {path:'signup',component:SignupComponent},
+  {path:'order',component:OrderComponent}
 ];
 
 @NgModule({
